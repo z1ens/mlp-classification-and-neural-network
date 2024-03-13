@@ -9,8 +9,6 @@ class CNN(nn.Module):
     """
     def __init__(self, num_classes=2):
         super(CNN, self).__init__()
-        #
-        # You code here
         self.conv = nn.Sequential(
             nn.Conv2d(1, 64, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(64),
